@@ -37,8 +37,8 @@
 /* add your css here, feel free to use comments and order them logically for better readability */
 
 :root {
-    --bg-light: #eb00000000;
-    --text-dark: #2c3e50;
+    --bg-light: #40826D;
+    --text-dark: #800000;
     --font-main: 'Segoe UI', sans-serif;
 
     --h1-bg: #800000;
@@ -47,12 +47,12 @@
     --h2-border: var(--h1-bg);
     --h3-text: #1b1b1b;
 
-    --list-bg: #e8f8f0;
+    --list-bg: #00563B;
     --list-border: #A1D69A;
     --strong-text: var(--h3-text);
-    --code-bg: #f0f0f0;
+    --code-bg: #00563B;
 
-    --def-bg: #f2fef9;
+    --def-bg: #00563B;
     --def-border: var(--h1-bg);
     --def-title: var(--text-dark);
 
@@ -65,7 +65,9 @@
 }
 
 body{
-display:grid;
+background-color:var(--bg-light) ;
+color:var(--text-dark);
+   display:grid;
 grid-template-areas:
 "header nav"
 "main main"
@@ -88,6 +90,13 @@ nav{
 
 main{
    grid-area: main;
+}
+
+article{
+   flex: 0 0 20%;
+   display:flex;
+   flex-wrap:wrap;
+
 }
 
 footer{
