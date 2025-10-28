@@ -38,6 +38,7 @@
 
 :root {
     --bg-light: #40826D;
+    --bg-dark: #00563B;
     --text-dark: #800000;
     --font-main: 'Segoe UI', sans-serif;
 
@@ -71,20 +72,19 @@ color:var(--text-dark);
 grid-template-areas:
 "header nav"
 "main main"
-"footer footer"
+"footer footer";
 
+grid-template-columns: 5fr 1fr;
+grid-template-rows:60px 1fr 30px;
 
-
-;
-grid-template-columns: 1fr 1fr;
-grid-template-rows:120px 1fr 60px;
-}
 
 header{
-grid-area:header;   
+background-color:var(--bg-dark);
+   grid-area:header;   
 }
 
 nav{
+   background-color:var(--bg-dark);
    grid-area:nav;
 }
 
@@ -100,5 +100,6 @@ article{
 }
 
 footer{
+   background-color:var(--bg-dark);
    grid-area: footer;
 }
