@@ -37,7 +37,8 @@
 /* add your css here, feel free to use comments and order them logically for better readability */
 
 :root {
-    --bg-light: #40826D;
+   --bg-night: #1b1b1b; 
+   --bg-light: #40826D;
     --bg-dark: #00563B;
     --text-dark: #800000;
     --font-main: 'Segoe UI', sans-serif;
@@ -66,26 +67,30 @@
 }
 
 body{
-background-color:var(--bg-light) ;
+background-color:var(--bg-dark);
 color:var(--text-dark);
    display:grid;
 grid-template-areas:
-"header nav"
-"main main"
+"header header"
+"main nav"
 "footer footer";
 
 grid-template-columns: 5fr 1fr;
 grid-template-rows:60px 1fr 30px;
-
+}
 
 header{
-background-color:var(--bg-dark);
+background-color:var(--bg-light);
    grid-area:header;   
 }
 
 nav{
-   background-color:var(--bg-dark);
+   background-color:var(--bg-light);
    grid-area:nav;
+   padding:40px;
+   align-items:
+
+   
 }
 
 main{
@@ -100,6 +105,5 @@ article{
 }
 
 footer{
-   background-color:var(--bg-dark);
-   grid-area: footer;
-}
+   background-color:var(--bg-light);
+   grid-area: footer;}
