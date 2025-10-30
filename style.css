@@ -87,11 +87,12 @@ background-color:var(--bg-light);
 nav{
    background-color:var(--bg-light);
    grid-area:nav;
-   padding:40px;
-   align-items:
-
    
 }
+
+ li{
+      margin: 50px;
+   }
 
 main{
    grid-area: main;
