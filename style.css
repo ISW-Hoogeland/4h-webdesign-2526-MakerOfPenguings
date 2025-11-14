@@ -104,13 +104,6 @@ main{
    background-color:var(--bg-dark);
 }
 
-article{
-   flex: 0 0 20%;
-   display:flex;
-   flex-wrap:wrap;
-
-}
-
 footer{
    background-color:var(--bg-light);
    grid-area: footer;
