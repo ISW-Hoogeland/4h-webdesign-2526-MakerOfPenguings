@@ -92,7 +92,14 @@ nav{
    background-color:var(--bg-light);
    grid-area:nav;
    
+
 }
+nav ul li{
+   list-style:none;
+color:#1b1b1b
+}
+nav
+
 
  li{
       margin: 50px;
